@@ -1,0 +1,22 @@
+{
+	"useTabs": true,
+	"singleQuote": true,
+	"trailingComma": "es5",
+	"printWidth": 80,
+	"htmlWhitespaceSensitivity": "ignore",
+	"proseWrap": "always",
+	"plugins": [
+		"prettier-plugin-svelte",
+		"@trivago/prettier-plugin-sort-imports"
+	],
+	"overrides": [
+		{
+			"files": "*.svelte",
+			"options": {
+				"parser": "svelte"
+			}
+		}
+	],
+	"importOrder": ["^\\$env/(.*)$", "^\\$app/(.*)$", "^\\$lib/(.*)$", "^[./]"],
+	"importOrderSortSpecifiers": true
+}
